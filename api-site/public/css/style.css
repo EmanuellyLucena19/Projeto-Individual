@@ -12,8 +12,8 @@ body {
 }
 
 .header {
-  color: #32b9cd;
-  border-bottom: 3px solid #32b9cd;
+  color: #32784a;
+  border-bottom: 3px solid #32784a;
   /* border: 3px solid yellow; */
 }
 
@@ -25,7 +25,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color:#156e93;
+  color:#32784a;
 }
 
 .agora {
@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  color:#156e93;
+  color:#32784a;
   /* border: 3px solid green; */
 }
 
@@ -48,7 +48,7 @@ body {
   height: 500px;
   color: white;
   /* border: 3px solid yellow; */
-  background-image: url("https://coris.com.br/blog/wp-content/uploads/2018/02/bora_bora_01.jpg");
+  background-image: url("");
   background-size: cover;
 }
 
@@ -137,7 +137,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
+  background-color: #32784a;
   height: 50px;
   color: white;
   margin: 0;
@@ -162,7 +162,7 @@ h4 {
   color: white;
   height: 550px;
   /* border: 3px solid yellow; */
-  background-image: url("https://exame.com/wp-content/uploads/2019/02/oceano.jpg");
+  background-image: url("");
   background-size: cover;
 }
 
@@ -175,7 +175,7 @@ h4 {
 }
 
 .banner-login {
-  color: #156e93;
+  color: #32784a;
 }
 
 .banner-login .card {
@@ -207,7 +207,7 @@ button {
 
 input {
   height: 30px;
-  border: 2px solid #156e93;
+  border: 2px solid #32784a;
   inset: 10px;
 }
 
@@ -219,7 +219,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #156e93;
+  background-color: #32784a;
   width: 120px;
   align-self: center;
 }
@@ -265,7 +265,7 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #32b9cd;
+  border-right: 3px solid #32784a;
   background-color: #212124;
   /* border: 3px solid pink; */
 }
@@ -281,7 +281,7 @@ form {
 }
 
 .header-left h1 {
-  color: #32b9cd;
+  color: #32784a;
 }
 
 .hello {
@@ -291,7 +291,7 @@ form {
 }
 
 .hello h3 {
-  color:#156e93;
+  color:#32784a;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -334,7 +334,7 @@ form {
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: #32b9cd;
+  background-color: #32784a;
   color: white;
   border-radius: 10px;
   text-align: center;
