@@ -31,10 +31,6 @@
                         Inicial
                     </a>
                 </li>
-                <li>
-                    <a href="./analytics.html">analytics</a>
-                </li>
-                <li>|</li>
                 <li class="agora">
                     <a href="./login.html">Login</a>
                 </li>
@@ -48,6 +44,9 @@
 
     <div class="banner-login">
         <div class="container">
+            <div class="imagem">
+                <img src="./assets/imgs/pioneiros-da-borborema-4.jpg" alt="">
+            </div>
             <div class="card medio">
                 <h2>Olá de volta!</h2>
                 <div class="formulario">
@@ -65,7 +64,7 @@
                 </div>
 
                 <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                    <img src="./assets/2.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
@@ -78,7 +77,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com amor por um aluno BandTec &copy; 2021</h4>
+            <h4>Emanuelly 2021 &copy; Todos os direitos reservados.</h4>
         </div>
     </div>
 
@@ -129,7 +128,7 @@
                     console.log(JSON.stringify(json));
 
                     sessionStorage.EMAIL_USUARIO = json.email;
-                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.NOME_USUARIO = json.nomeUsuario;
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {

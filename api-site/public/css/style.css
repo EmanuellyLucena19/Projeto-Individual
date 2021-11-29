@@ -13,7 +13,6 @@ body {
 
 .header {
   color: #32784a;
-  border-bottom: 3px solid #32784a;
   /* border: 3px solid yellow; */
 }
 
@@ -49,7 +48,9 @@ body {
   color: white;
   /* border: 3px solid yellow; */
   background-image: url("");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1199px;
 }
 
 .banner .container {
@@ -76,7 +77,7 @@ body {
 /* missao visao valores */
 
 .social {
-  background-color: #a2d1ff;, 0.5
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/383/199/601/cacti-succulents-art-patterns-wallpaper-preview.jpg");
   /* border: 3px solid yellowgreen; */
   padding: 50px 0;
 }
@@ -203,12 +204,19 @@ button {
   cursor: pointer;
 }
 
+.imagem {
+  width: 500px;
+  height: 500px;
+  
+}
+
 /* FORMULARIO */
 
 input {
   height: 30px;
-  border: 2px solid #32784a;
+  border: 0;
   inset: 10px;
+  border-bottom: 2px solid green;
 }
 
 .btn {
