@@ -9,11 +9,32 @@ CREATE TABLE usuario (
 	senha VARCHAR(50)
 );
 
-CREATE TABLE musicas(
-	idMusicas INT PRIMARY KEY AUTO_INCREMENT,
-	nomeMusicas VARCHAR(50)
+create table lugares (
+	idLugar INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50)
 );
 
+create table avaliacao(
+	fk_usuario INT,
+    fk_lugares INT,
+    dataAvaliacao DATETIME,
+    gostou boolean,
+    FOREIGN KEY(fk_usuario) REFERENCES usuario(idUsuario),
+    FOREIGN KEY(fk_lugares) REFERENCES lugares(idLugar)
+);
 
-select*from usuario;
-select*from musicas;
+DROP TABLE avaliacao;
+
+select * from usuario;
+
+INSERT INTO lugares VALUES (null, 'Museu dos pandeiros');
+INSERT INTO lugares VALUES (null, 'Parque do povo');
+INSERT INTO lugares VALUES (null, 'Os três tropeiros');
+INSERT INTO lugares VALUES (null, 'A Rainha da borborema');
+
+INSERT INTO avaliacao VALUES (1,1, now(), true);
+INSERT INTO avaliacao VALUES (1,2, now(), false);
+
+select * from avaliacao
+join usuario on idUsuario = fk_usuario
+join lugares on idLugar = fk_lugares LIMIT 10;
