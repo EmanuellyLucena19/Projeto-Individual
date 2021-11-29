@@ -25,7 +25,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color:#32784a;
+  color: #32784a;
 }
 
 .agora {
@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  color:#32784a;
+  color: #32784a;
   /* border: 3px solid green; */
 }
 
@@ -76,7 +76,7 @@ body {
 /* missao visao valores */
 
 .social {
-  background-color: #a2d1ff;, 0.5
+  background-color: #a2d1ff;
   /* border: 3px solid yellowgreen; */
   padding: 50px 0;
 }
@@ -291,7 +291,7 @@ form {
 }
 
 .hello h3 {
-  color:#32784a;
+  color: #32784a;
   font-weight: 300;
   font-size: 1.2rem;
 }
