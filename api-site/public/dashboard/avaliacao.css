@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  background-color: aliceblue;
+  color: white;
+  margin-top: 30px;
+}
+
+thead {
+  background-color: #32784a;
+  color: white;
+}
+
+tbody {
+  padding: 5px;
+}
+
+tr,
+td {
+  background-color: #32784a;
+}

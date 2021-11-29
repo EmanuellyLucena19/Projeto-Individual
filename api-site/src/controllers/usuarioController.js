@@ -8,6 +8,7 @@ function testar(req, res) {
 }
 
 function listar(req, res) {
+    
     usuarioModel.listar()
         .then(function (resultado) {
             if (resultado.length > 0) {
@@ -43,6 +44,7 @@ function entrar(req, res) {
                     if (resultado.length == 1) {
                         console.log(resultado);
                         res.json(resultado[0]);
+
                     } else if (resultado.length == 0) {
                         res.status(403).send("Email e/ou senha inválido(s)");
                     } else {
@@ -61,11 +63,11 @@ function entrar(req, res) {
 }
 
 function cadastrar(req, res) {
-    var nome = req.body.nomeServer;
+    var nomeUsuario = req.body.nomeUsuarioServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
 
-    if (nome == undefined) {
+    if (nomeUsuario == undefined) {
         res.status(400).send("Seu nome está undefined!");
     } else if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
@@ -73,7 +75,7 @@ function cadastrar(req, res) {
         res.status(400).send("Sua senha está undefined!");
     } else {
         
-        usuarioModel.cadastrar(nome, email, senha)
+        usuarioModel.cadastrar(nomeUsuario, email, senha)
             .then(
                 function (resultado) {
                     res.json(resultado);

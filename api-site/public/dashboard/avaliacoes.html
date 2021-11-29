@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliações</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./avaliacao.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>Cactus</h1>
+      <ul class="navbar">
+        <li>
+          <a href="../index.html">
+            Inicial
+          </a>
+        </li>
+        <li>
+          <a href="./dashboard.html">Dashboard</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <table cellpadding="10px" cellspacing="2px">
+      <thead>
+        <th>
+          Lugar
+        </th>
+        <th>
+          Usuario
+        </th>
+        <th>
+          Avaliacao
+        </th>
+        <th>
+          Data
+        </th>
+      </thead>
+      <tbody id="dados">
+      </tbody>
+    </table>
+  </div>
+
+
+</body>
+
+</html>
+<script>
+  fetch('http://localhost:3333/avaliacao').then(resposta => {
+    if (resposta.ok == true) {
+      resposta.json().then(json => {
+        console.log(json)
+        for (i = 0; i < json.length; i++) {
+          dados.innerHTML += `
+          <tr>
+            <td>${json[i].nome}</td>
+            <td>${json[i].nomeUsuario}</td>
+            <td>${ json[i].gostou == 1 ? 'Gostou' : 'Não gostou'}</td>
+            <td>${ 
+                new Date(json[i].dataAvaliacao)
+                .toLocaleDateString('pt-BR', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric'
+                })
+              }
+            </td>
+          </tr>
+          `
+        }
+      })
+    }
+  })
+</script>

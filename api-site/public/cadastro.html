@@ -33,10 +33,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./analytics.html">Analytics</a>
-                </li>
-                <li>|</li>
-                <li>
                     <a href="./login.html">Login</a>
                 </li>
                 <li class="agora">
@@ -49,11 +45,16 @@
 
     <div class="banner-login ">
         <div class="container ">
+            <div class="imagem">
+                <img src="./assets/museu_pandeiros.svg" alt="">
+            </div>
             <div class="card medio">
                 <h2>Bem-vindo!</h2>
                 <div class="formulario">
                     <div id="form_cadastro">
-                        <img src="./assets/icon/user.png" alt=""><input id="nome_input" type="text" placeholder="Nome">
+                        Nome:
+                        <br>
+                        <input id="nome_input" type="text" placeholder="Nome">
                         <br>
                         <br>
                         E-mail:
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                    <img src="./assets/2.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
@@ -88,7 +89,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito por uma aluna BandTec &copy; 2021</h4>
+            <h4>Emanuelly 2021 &copy; Todos os direitos reservados.</h4>
         </div>
     </div>
     <!--footer fim-->
@@ -99,19 +100,18 @@
 </html>
 
 <script>
-
     function cadastrar() {
         aguardar();
 
-        var nomeVar = nome_input.value;
+        var nomeUsuarioVar = nome_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeUsuarioVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
 
             window.alert("Preencha todos os campos para prosseguir!");
-            if (nomeVar == "") {
+            if (nomeUsuarioVar == "") {
                 console.log('Nome está em branco')
             }
             if (emailVar == "") {
@@ -146,10 +146,9 @@
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                nomeServer: nomeVar,
+                nomeUsuarioServer: nomeUsuarioVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar,
-                confirmacaoSenhaServer: confirmacaoSenhaVar
+                senhaServer: senhaVar
 
             })
         }).then(function (resposta) {
@@ -171,5 +170,4 @@
 
         return false;
     }
-
 </script>
