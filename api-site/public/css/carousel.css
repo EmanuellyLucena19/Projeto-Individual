@@ -8,7 +8,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 96%;
+  max-width: 50%;
   position: relative;
   margin: auto;
 }
@@ -22,6 +22,28 @@ img {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+i{
+  cursor: pointer;
+  font-size: 25px;
+}
+#face{
+  transition: all 0.3s;
+}
+#face:hover{
+  color: blue;
+}
+#insta{
+  transition: all 0.3s;
+}
+#insta:hover{
+  color: rgb(228, 0, 118);
+}
+#whats{
+  transition: all 0.3s;
+}
+#whats:hover{
+  color: rgb(1, 56, 24);
 }
 
 /* Number text (1/3 etc) */
