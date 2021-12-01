@@ -23,14 +23,12 @@ create table avaliacao(
     FOREIGN KEY(fk_lugares) REFERENCES lugares(idLugar)
 );
 
-DROP TABLE avaliacao;
-
 select * from usuario;
 
 INSERT INTO lugares VALUES (null, 'Museu dos pandeiros');
 INSERT INTO lugares VALUES (null, 'Parque do povo');
-INSERT INTO lugares VALUES (null, 'Os três tropeiros');
-INSERT INTO lugares VALUES (null, 'A Rainha da borborema');
+INSERT INTO lugares VALUES (null, 'Os Pioneiros da Borborema');
+INSERT INTO lugares VALUES (null, 'Farra de Bodega');
 
 INSERT INTO avaliacao VALUES (1,1, now(), true);
 INSERT INTO avaliacao VALUES (1,2, now(), false);
