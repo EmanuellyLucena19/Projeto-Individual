@@ -7,7 +7,7 @@ var mySqlConfig = {
     host: "localhost",
     user: "root",
     database: "nordeste",
-    password: "admin",
+    password: "bandtec",
 };
 
 function executar(instrucao) {
